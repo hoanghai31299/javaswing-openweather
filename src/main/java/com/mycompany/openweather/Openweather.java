@@ -17,7 +17,7 @@ public class Openweather {
 //        data.getWeather("16.06778", "108.22083");
         Home home = new Home();
         home.pack();
-home.setLocationRelativeTo(null);
+        home.setLocationRelativeTo(null);
         home.show();
         home.load();
     }

@@ -67,6 +67,7 @@ public class Cities {
 
                 result.add(new City(name, lat, lng, state));
             }
+            result.sort((c1, c2) -> c1.getName().compareTo(c2.getName()));
             return result;
         } catch (ParseException e) {
             throw new RuntimeException("FAIL TO PARSE DATA TO JSON, DATA" + dataString);
